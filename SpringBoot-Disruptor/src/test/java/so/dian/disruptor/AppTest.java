@@ -8,7 +8,6 @@ import com.lmax.disruptor.YieldingWaitStrategy;
 import so.dian.disruptor.event.TradeEvent;
 import so.dian.disruptor.handler.TradeHandler;
 
-import java.util.Set;
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
@@ -69,6 +68,6 @@ public class AppTest {
         transProcessor.halt();
         //终止线程
         executors.shutdown();
-        Set
+
     }
 }
