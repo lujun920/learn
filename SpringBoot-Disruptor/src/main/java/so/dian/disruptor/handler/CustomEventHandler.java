@@ -26,6 +26,6 @@ public class CustomEventHandler<T> implements EventHandler<CustomEvent<T>> {
     @Override
     public void onEvent(final CustomEvent<T> event, final long sequence, final boolean endOfBatch) throws Exception {
         System.out.println("消费消息EventHandler「"+val+"」，消息体："+event.getObj()+"，线程名称："
-                + Thread.currentThread().getName());
+                + Thread.currentThread().getName()+Thread.currentThread().getId());
     }
 }

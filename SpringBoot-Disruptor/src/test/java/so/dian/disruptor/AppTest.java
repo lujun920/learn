@@ -20,6 +20,8 @@ import java.util.concurrent.ThreadLocalRandom;
  */
 public class AppTest {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
+        System.out.println(1 << 8);
+
         int BUFFER_SIZE = 1024;
         int THREAD_NUMBERS = 4;
         /*

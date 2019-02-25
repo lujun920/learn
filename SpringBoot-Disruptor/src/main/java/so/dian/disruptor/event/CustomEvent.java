@@ -4,6 +4,7 @@
  */
 package so.dian.disruptor.event;
 
+import com.lmax.disruptor.EventFactory;
 import lombok.Data;
 
 /**
@@ -15,4 +16,5 @@ import lombok.Data;
 @Data
 public class CustomEvent<T> {
     private T obj;
+    public static final EventFactory<CustomEvent> FACTORY = () -> new CustomEvent<>();
 }
