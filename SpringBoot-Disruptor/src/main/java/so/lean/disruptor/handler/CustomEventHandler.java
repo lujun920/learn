@@ -2,10 +2,10 @@
  * Dian.so Inc.
  * Copyright (c) 2016-2019 All Rights Reserved.
  */
-package so.dian.disruptor.handler;
+package so.lean.disruptor.handler;
 
 import com.lmax.disruptor.EventHandler;
-import so.dian.disruptor.event.CustomEvent;
+import so.lean.disruptor.event.CustomEvent;
 
 /**
  * TODO

@@ -2,15 +2,15 @@
  * Dian.so Inc.
  * Copyright (c) 2016-2019 All Rights Reserved.
  */
-package so.dian.disruptor;
+package so.lean.disruptor;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.dsl.Disruptor;
-import so.dian.disruptor.event.CustomEvent;
-import so.dian.disruptor.event.CustomEventProducer;
-import so.dian.disruptor.factory.CustomEventFactory;
-import so.dian.disruptor.handler.CustomEventHandler;
+import so.lean.disruptor.event.CustomEvent;
+import so.lean.disruptor.event.CustomEventProducer;
+import so.lean.disruptor.factory.CustomEventFactory;
+import so.lean.disruptor.handler.CustomEventHandler;
 
 import java.util.Scanner;
 import java.util.concurrent.ThreadFactory;

@@ -2,10 +2,10 @@
  * Dian.so Inc.
  * Copyright (c) 2016-2019 All Rights Reserved.
  */
-package so.dian.disruptor.factory;
+package so.lean.disruptor.factory;
 
 import com.lmax.disruptor.EventFactory;
-import so.dian.disruptor.event.CustomEvent;
+import so.lean.disruptor.event.CustomEvent;
 
 /**
  * TODO

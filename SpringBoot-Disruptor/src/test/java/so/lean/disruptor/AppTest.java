@@ -1,12 +1,12 @@
-package so.dian.disruptor;
+package so.lean.disruptor;
 
 import com.lmax.disruptor.BatchEventProcessor;
 import com.lmax.disruptor.EventFactory;
 import com.lmax.disruptor.RingBuffer;
 import com.lmax.disruptor.SequenceBarrier;
 import com.lmax.disruptor.YieldingWaitStrategy;
-import so.dian.disruptor.event.TradeEvent;
-import so.dian.disruptor.handler.TradeHandler;
+import so.lean.disruptor.event.TradeEvent;
+import so.lean.disruptor.handler.TradeHandler;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;

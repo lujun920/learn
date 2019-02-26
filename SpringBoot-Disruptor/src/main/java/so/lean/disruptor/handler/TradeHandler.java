@@ -2,12 +2,12 @@
  * Dian.so Inc.
  * Copyright (c) 2016-2019 All Rights Reserved.
  */
-package so.dian.disruptor.handler;
+package so.lean.disruptor.handler;
 
 import com.lmax.disruptor.EventHandler;
 import com.lmax.disruptor.LifecycleAware;
 import lombok.extern.slf4j.Slf4j;
-import so.dian.disruptor.event.TradeEvent;
+import so.lean.disruptor.event.TradeEvent;
 
 import java.util.Date;
 import java.util.UUID;
