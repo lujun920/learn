@@ -20,20 +20,6 @@
         </encoder>
     </appender>
 
-    <!-- 应用 app-pay-digest-appender 支付日志-->
-    <appender name="APP-PAY-DIGEST-APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <File>${mofa_loggingRoot}/${app_name}/app-pay-digest.log</File>
-        <!-- 根据时间来制定滚动策略 -->
-        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-            <FileNamePattern>${mofa_loggingRoot}/${app_name}/app-pay-digest.log.%d{yyyy-MM-dd}</FileNamePattern>
-            <MaxHistory>7</MaxHistory>
-        </rollingPolicy>
-
-        <encoder>
-            <Pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %logger{5} %n%msg%n</Pattern>
-        </encoder>
-    </appender>
-
     <!-- 应用 mofa-profiler-digest-appender -->
     <appender name="MOFA-PROFILER-DIGEST-APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <File>${mofa_loggingRoot}/mofa/mofa-profiler-digest.log</File>
@@ -94,15 +80,6 @@
         <appender-ref ref="APP-DEFAULT-APPENDER"/>
     </appender>
 
-    <!-- app-pay 异步保存 -->
-    <appender name="APP-PAY-ASYNC" class="ch.qos.logback.classic.AsyncAppender">
-        <discardingThreshold>0</discardingThreshold>
-        <queueSize>512</queueSize>
-        <!-- 添加附加的appender,最多只能添加一个 -->
-        <appender-ref ref="APP-PAY-DIGEST-APPENDER"/>
-    </appender>
-
-
     <!-- mofa-Profiler 异步保存 -->
     <appender name="MOFA-PROFILER-ASYNC" class="ch.qos.logback.classic.AsyncAppender">
         <discardingThreshold>0</discardingThreshold>
@@ -129,7 +106,7 @@
 
 
     <!-- 默认的日志，即其他logger没有涵盖的日志 -->
-    <logger name="com.youdian.pay" additivity="true">
+    <logger name="so.lean.disruptor" additivity="true">
         <level value="${mofa_loggingLevel}"/>
         <appender-ref ref="APP-DEFAULT-ASYNC"/>
         <appender-ref ref="MOFA-ERROR-ASYNC"/>
@@ -147,13 +124,6 @@
         <level value="${mofa_loggingLevel}"/>
         <appender-ref ref="MOFA-SQL-ASYNC"/>
     </logger>
-
-    <!-- 支付日志执行监控日志-->
-    <logger name="APP_PAY_DIGEST" additivity="false">
-        <level value="${mofa_loggingLevel}"/>
-        <appender-ref ref="APP-PAY-ASYNC"/>
-    </logger>
-
 
     <!-- 应用根日志-->
     <root level="${mofa_loggingLevel}">
