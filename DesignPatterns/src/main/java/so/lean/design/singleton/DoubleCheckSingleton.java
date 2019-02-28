@@ -5,6 +5,7 @@
 package so.lean.design.singleton;
 
 /**
+ * 懒汉模式单例
  * 双重检查，在同步锁的基础上在进行一次判断检查提升性能
  *
  * @author ${baizhang}
