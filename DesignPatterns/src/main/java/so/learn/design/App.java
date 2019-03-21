@@ -1,4 +1,4 @@
-package so.lean.design;
+package so.learn.design;
 
 /**
  * Hello world!

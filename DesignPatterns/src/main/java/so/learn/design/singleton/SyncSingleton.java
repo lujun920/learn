@@ -2,7 +2,7 @@
  * Dian.so Inc.
  * Copyright (c) 2016-2019 All Rights Reserved.
  */
-package so.lean.design.singleton;
+package so.learn.design.singleton;
 
 /**
  * 线程安全单例写法
