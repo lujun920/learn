@@ -58,6 +58,6 @@ class MainTest1 {
         System.out.println(ColorEnum.RED.equals(ColorEnum.ORANGE));
         System.out.println(ColorEnum.RED.equals(ColorEnum.RED));
         System.out.println(ColorEnum.RED.equals(0));
-
+        System.out.println(ColorEnum.RED==ColorEnum.ORANGE);
     }
 }
