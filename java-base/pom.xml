@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.lujun.learn</groupId>
+    <artifactId>learn</artifactId>
+    <version>1.0-RELEASE</version>
+  </parent>
+  <artifactId>java-base</artifactId>
+  <packaging>jar</packaging>
+  <name>java-base</name>
+  <url>http://maven.apache.org</url>
+
+  <dependencies>
+      <dependency>
+          <groupId>org.openjdk.jol</groupId>
+          <artifactId>jol-core</artifactId>
+      </dependency>
+  </dependencies>
+
+  <build>
+    <finalName>java-base</finalName>
+    <plugins>
+      <plugin>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-maven-plugin</artifactId>
+        <configuration>
+          <!-- 输出路径 -->
+          <outputDirectory>../target/</outputDirectory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

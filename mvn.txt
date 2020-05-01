@@ -1,2 +1,4 @@
 
-mvn archetype:generate -DgroupId=so.lean.design -DartifactId=DesignPatterns -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=local
+mvn archetype:generate -DgroupId=com.lujun.learn -DartifactId=learn -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=local
+
+mvn archetype:generate -DgroupId=com.lujun.learn -DartifactId=java-base -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DarchetypeCatalog=local
