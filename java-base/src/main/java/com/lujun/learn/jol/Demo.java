@@ -25,4 +25,6 @@ public class Demo {
      *
      */
     private String name;
+
+    private byte[] bytes;
 }

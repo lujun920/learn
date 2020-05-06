@@ -23,9 +23,12 @@ public class TestJol {
      * @param args
      */
     public static void main(String[] args) {
+
+        byte[] bytes= new byte[1024* 1024];
         Demo demo= new Demo();
         demo.setId(1123);
         demo.setName("abc");
+        demo.setBytes(bytes);
 //        System.out.println(ClassLayout.parseInstance(demo).toPrintable());
 
         //打印hashcode
