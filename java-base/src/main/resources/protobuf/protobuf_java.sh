@@ -1,0 +1,1 @@
+protoc -I=./res --java_out=./out ./res/*.proto
